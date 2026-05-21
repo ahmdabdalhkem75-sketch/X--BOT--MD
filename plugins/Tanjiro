@@ -1,0 +1,21 @@
+const { cmd } = require('../command');
+
+cmd({
+    pattern: "anime",
+    desc: "Anime Fun",
+    category: "fun",
+    react: "🔥",
+    filename: __filename
+},
+async(conn, mek, m, { reply }) => {
+
+reply(`👁️ فعالية العيون 👁️
+
+
+مين صاحب هذي العيون؟ 👀
+1️⃣ غوجو
+2️⃣ كاكاشي
+3️⃣ ساسكي
+4️⃣ ليفاي
+`);
+});
