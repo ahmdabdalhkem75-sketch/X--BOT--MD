@@ -1,0 +1,14 @@
+const { cmd } = require('../command')
+c
+  pattern: "anime",
+  desc: "فعالية أنمي ممتعة",
+  category: "fun",
+  react: "🔥",
+  filename: __filename
+}, async (conn, mek, m, { reply }) => {
+  try {
+    await reply("👁 فعالية العيون 👁\n\n✨ استمتع بأجواء الأنمي 🔥");
+  } catch (e) {
+    reply("حدث خطأ أثناء التنفيذ: " + e);
+  }
+});
